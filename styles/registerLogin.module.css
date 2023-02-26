@@ -1,0 +1,55 @@
+/* Login Form */
+.mainDiv {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    padding: 30px;
+    margin: 50px auto;
+    width: 400px;
+  }
+  
+  .heading {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .fullForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .labelFor {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .inputFrom {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
