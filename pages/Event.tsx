@@ -1,32 +1,7 @@
-import React, { useState } from 'react';
 import Styles from 'styles/Login.module.css';
 
 export default function Event() {
-  const [title, setTitle] = useState("");
-  const [date, setDate] = useState("");
-  const [time, setTime] = useState("");
-  const [location, setLocation] = useState("");
-  const [description, setDescription] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-
-    // create a new event object
-    const newEvent = {
-      title,
-      date,
-      time,
-      location,
-      description,
-    };
-
-    // clear the form inputs
-    setTitle("");
-    setDate("");
-    setTime("");
-    setLocation("");
-    setDescription("");
-  };
 
   return (
     <div className={Styles.container}>
@@ -38,7 +13,7 @@ export default function Event() {
         </div>
         <p className={Styles.signIn}>Create Event</p>
         <div className={Styles.formDiv}>
-          <form className={Styles.mainForm} onSubmit={handleSubmit}>
+          <form className={Styles.mainForm} >
             <div className={Styles.formInDiv}>
               <label htmlFor="exampleInputEmail1" className={Styles.emailLabel}>
                 Enter Title:
@@ -49,8 +24,8 @@ export default function Event() {
                 className={Styles.emailInput}
                 id="exampleInputEmail1"
                 name="title"
-                value={title}
-                onChange={(event) => setTitle(event.target.value)}
+                // value={title}
+             
                 required
                 autoComplete="true"
               />
@@ -64,8 +39,8 @@ export default function Event() {
                 className={Styles.passInput}
                 id="exampleInputDate1"
                 name="date"
-                value={date}
-                onChange={(event) => setDate(event.target.value)}
+                // value={date}
+                
               />
             </div>
             <div className="mb-3">
@@ -77,8 +52,8 @@ export default function Event() {
                 className={Styles.passInput}
                 id="exampleInputTime1"
                 name="time"
-                value={time}
-                onChange={(event) => setTime(event.target.value)}
+                // value={time}
+                
                 required
                 autoComplete="true"
               />
@@ -92,8 +67,8 @@ export default function Event() {
                   className={Styles.emailInput}
                   id="exampleInputLoc1"
                   name="location"
-                  value={location}
-                  onChange={(event) => setLocation(event.target.value)}
+                  // value={location}
+                
                   required
                   autoComplete="true"
                 />
@@ -109,8 +84,7 @@ export default function Event() {
                   id="exampleInputLoc1"
                   aria-describedby="emailHelp"
                   name="description"
-                  value={description}
-                  onChange={(event) => setDescription(event.target.value)}
+                  // value={description}
                   required
                   autoComplete="true"
                 />
