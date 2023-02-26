@@ -78,8 +78,7 @@ export default function Event() {
                   Details:
                 </label>
                 <textarea
-                  rows="4"
-                  cols="50"
+                
                   className={Styles.emailInput}
                   id="exampleInputLoc1"
                   aria-describedby="emailHelp"
